@@ -209,17 +209,6 @@ body {
   background-color: #4140CD;
 }
 
-.sign-in-window {
-  position: relative;
-  z-index: 4;
-  
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-
-  background-color: white;
-}
-
 .sign-in-window-wrapper {
   position: fixed;
   top: 0;
@@ -234,6 +223,18 @@ body {
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sign-in-window {
+  position: relative;
+  z-index: 4;
+  
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+
+  background-color: white;
 }
 
 .sign-in-window-close {
@@ -251,6 +252,123 @@ body {
 
 .sign-in-window-header {
   font-size: 32px;
+}
+
+.sign-in-email-label {
+  display: inline-block;
+  margin-top: 10px;
+
+  cursor: pointer;
+}
+
+.sign-in-email-input {
+  margin-top: 10px;
+}
+
+.sign-in-pass-label {
+  display: inline-block;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+
+.sign-in-pass-input {
+  margin-top: 10px;
+}
+
+.sign-in-submit-button {
+  margin-top: 10px;
+  height: 41px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  color: white;
+  border: 1px solid #4443D0;
+  border-radius: 5px;
+  background-color: #4443D0;
+}
+
+.sign-up-window-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sign-up-window {
+  position: relative;
+  z-index: 4;
+  
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+
+  background-color: white;
+}
+
+.sign-up-window-close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  z-index: 4;
+
+  width: 18px;
+  height: 18px;
+
+  fill: white;
+  cursor: pointer;
+}
+
+.sign-up-window-header {
+  font-size: 32px;
+}
+
+.sign-up-email-label {
+  display: inline-block;
+  margin-top: 10px;
+
+  cursor: pointer;
+}
+
+.sign-up-email-input {
+  margin-top: 10px;
+}
+
+.sign-up-pass-label {
+  display: inline-block;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+
+.sign-up-pass-input {
+  margin-top: 10px;
+}
+
+.sign-up-submit-button {
+  margin-top: 10px;
+  height: 41px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  color: white;
+  border: 1px solid #4443D0;
+  border-radius: 5px;
+  background-color: #4443D0;
 }
 
 .visually-hidden {

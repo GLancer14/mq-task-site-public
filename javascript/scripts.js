@@ -5,6 +5,8 @@ const signInButton = document.getElementsByClassName("header-sign-in-btn")[0];
 const signUpButton = document.getElementsByClassName("header-sign-up-btn")[0];
 const signInWindowClose = document.getElementsByClassName("sign-in-window-close")[0];
 const signInWindow = document.getElementsByClassName("sign-in-window-wrapper")[0];
+const signUpWindowClose = document.getElementsByClassName("sign-up-window-close")[0];
+const signUpWindow = document.getElementsByClassName("sign-up-window-wrapper")[0];
 
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
@@ -25,6 +27,7 @@ signInWindow.addEventListener("click", function (event) {
   if (event.target !== event.currentTarget) return;
   closeSignInWindow();
 });
+
 
 function burgerClick () {
   if (navMenu.style.display === "none" || !navMenu.style.display) {
