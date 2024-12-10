@@ -188,7 +188,7 @@ body {
   padding-left: 22px;
   padding-right: 22px;
 
-  vertical-align: center;
+  vertical-align: middle;
 
   border: 1px solid #2A92F9;
   border-radius: 10px;
@@ -355,6 +355,18 @@ body {
 
 .sign-up-pass-input, .sign-up-rep-pass-input {
   margin-top: 10px;
+}
+
+.form-email-msg {
+  margin-top: 10px;
+}
+
+.form-email-msg-err {
+  color: red;
+}
+
+.form-email-msg-succ {
+  color: green;
 }
 
 .sign-up-submit-button {
