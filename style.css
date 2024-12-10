@@ -346,14 +346,14 @@ body {
   margin-top: 10px;
 }
 
-.sign-up-pass-label {
+.sign-up-pass-label, .sign-up-rep-pass-label {
   display: inline-block;
   margin-top: 10px;
   
   cursor: pointer;
 }
 
-.sign-up-pass-input {
+.sign-up-pass-input, .sign-up-rep-pass-input {
   margin-top: 10px;
 }
 
@@ -365,10 +365,9 @@ body {
   font-weight: 700;
   text-transform: capitalize;
 
-  color: white;
-  border: 1px solid #4443D0;
+  color: #4443D0;
+  border: 1px solid #7372FF;
   border-radius: 5px;
-  background-color: #4443D0;
 }
 
 .visually-hidden {

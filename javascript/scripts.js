@@ -27,6 +27,12 @@ signInWindow.addEventListener("click", function (event) {
   if (event.target !== event.currentTarget) return;
   closeSignInWindow();
 });
+signUpButton.addEventListener("click", headerSignUpButtonCallback);
+signUpWindowClose.addEventListener("click", closeSignUpWindow);
+signUpWindow.addEventListener("click", function (event) {
+  if (event.target !== event.currentTarget) return;
+  closeSignUpWindow();
+});
 
 
 function burgerClick () {
@@ -51,4 +57,18 @@ function headerSignInButtonCallback () {
 
 function closeSignInWindow () {
   signInWindow.style.display = "none";
+}
+
+function headerSignUpButtonCallback () {
+  const signUpWindowWrap = document.getElementsByClassName("sign-up-window-wrapper")[0];
+
+  if (signUpWindowWrap.style.display === "none" || !signUpWindowWrap.style.display) {
+    signUpWindowWrap.style.display = "flex";
+  } else {
+    signUpWindowWrap.style.display = "none";
+  }
+}
+
+function closeSignUpWindow () {
+  signUpWindow.style.display = "none";
 }
